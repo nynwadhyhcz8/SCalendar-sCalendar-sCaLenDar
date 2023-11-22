@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+
+    <script>
+    </script>
+
+    <noscript>
+        <meta http-equiv='refresh'
+            content='0;url=noJS.html?src=https%3A%2F%2Fpj.dtbao.io.vn%2Fpj%2FSchendar-Clients%2Findex.html'>
+    </noscript>
+
+    <style>
+        #txtKLichHoc {
+            min-width: 25%;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch học tự động | Powered by 1Box Studios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+        </symbol>
+        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+        </symbol>
+        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </symbol>
+    </svg>
+
+</head>
+<body>
+    <!-- Modal thông tin -->
+    <div id="modalThongTin" notiVer="cn104fixbug_source" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title"><h3>Thông tin</h3></div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+					<h3>Thông tin cập nhật (Bản 1.0.4 - 04/11/2023)</h3>
+                    <ul>
+                        <li>Sửa lỗi không cập nhật lịch IUH</li>
+                        <li>Cập nhật lại cho trường Gia Định (Sửa lỗi không tạo lịch)</li>
+                        <li>Sửa lỗi logic</li>
+                    </ul>
+					
+					<p>[Quan trọng] Lịch học và thi (kết hợp) hiện đang bị lỗi chưa rõ nguyên nhân, các bạn hãy chịu khó add 2 lịch riêng lẻ nhen!</p>
+
+					<p>Khi add xong có thể lịch chưa hiển thị liền. Bạn hãy để nguyên và chờ khoảng vài phút nhé!</p>
+					<p>Ngoài ra, Schendar không lưu trữ thông tin bạn trên máy chủ. Chỉ là bên trung gian giúp lịch học và Google liên kết với nhau.</p>
+					<p>[Dành cho lập trình viên] Mã nguồn dự án: <a href="https://github.com/kennex666/IUH-Calendar-FullSource" target="_blank">tại đây</a></p>
+					<p>Like fanpage <a href="https://facebook.com/103211735992722" target="_blank">tại đây</a> để cập nhật thêm về dự án, hoạt động của Schendar nhé :3</p>
+					<a href="https://github.com/kennex666/IUH.Tools" target="_blank">Tool giúp bạn bỏ qua khảo sát tại đây (Bạn có thể vào menu để xem lại)</a>
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">OK, Tôi đã hiểu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal tạo lịch -->
+    <div id="modalShowLich" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Tạo lịch thành công!</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lịch học đã được khởi tạo thành công. Bên dưới là đường dẫn để liên kết lịch với Google Calendar</p>
+                    <div class="input-group pb-4" name="Lịch học URL">
+                        <span class="input-group-text">Lịch học</span>
+                        <textarea rows="2" id="urlLichHoc" class="form-control bg-white" ></textarea>
+                        <button class="btn btn-success" id="btnLichHocCopy">Copy</button>
+                    </div>
+                    <div class="input-group pb-4" name="Lịch thi URL">
+                        <span class="input-group-text">Lịch thi</span>
+                        <textarea rows="2" id="urlLichThi" class="form-control bg-white"></textarea>
+                        <button class="btn btn-success" id="btnLichThiCopy">Copy</button>
+                    </div>
+                    <div class="input-group pb-4" name="Lịch cả học & thi URL">
+                        <span class="input-group-text">Lịch học & thi</span>
+                        <textarea rows="2" id="urlLichHocThi" class="form-control bg-white"></textarea>
+                        <button class="btn btn-success" id="btnLichHocThiCopy">Copy</button>
+                    </div>
+                   
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" target="_blank" href="https://calendar.google.com/calendar/r/settings/addbyurl">Đến Google Calendar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+        <div class="navbar navbar-light bg-light nav-tabs">
+            <nav class="navbar">
+                <a href="https://facebook.com/103211735992722" class="navbar-brand fw-bold">Schendar (1.0.4)</a>
+            </nav>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="nav-item nav-link" href="https://1boxstudios.com/">Trang chủ</a>
+                <a class="nav-item nav-link"
+                    href="https://www.facebook.com/iuhCalendar/posts/pfbid02QTCSzzj6kjgtYDYHarTcKJ4qz7P6j7JsrCtetKMjmesHYrUrmrodwnJdxA12xkiQl">Thông
+                    tin</a>
+                <a class="nav-item nav-link" href="https://www.facebook.com/iuhCalendar/posts/pfbid02msaJPxRrvjMiop6ZcqdwWsjgqhkVdZkVtV2Ks9DX9FHVZ4AHX4MRoRnFkp24RGwkl">Hướng dẫn</a>
+                <a class="nav-item nav-link" href="https://github.com/kennex666/IUH.Tools">Bỏ qua khảo sát</a>
+                
+                <button class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#modalThongTin">Thông tin</button>
+            </div>
+
+
+            <nav class="navbar d-none d-sm-flex">
+                <a class="nav-item nav-link" href="https://1boxstudios.com/">Trang chủ</a>
+                <a class="nav-item nav-link"
+                    href="https://www.facebook.com/iuhCalendar/posts/pfbid02QTCSzzj6kjgtYDYHarTcKJ4qz7P6j7JsrCtetKMjmesHYrUrmrodwnJdxA12xkiQl">Thông
+                    tin</a>
+                <a class="nav-item nav-link" href="https://www.facebook.com/iuhCalendar/posts/pfbid02msaJPxRrvjMiop6ZcqdwWsjgqhkVdZkVtV2Ks9DX9FHVZ4AHX4MRoRnFkp24RGwkl">Hướng dẫn</a>
+                <a class="nav-item nav-link" href="https://github.com/kennex666/IUH.Tools">Bỏ qua khảo sát</a>
+                
+                <button class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#modalThongTin">Thông tin</button>
+            </nav>
+
+            
+        </div>
+        
+        <div class="row">
+            <div id="alertMsg" class="alert alert-warning alert-dismissible fade d-none" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+                    <use xlink:href="#exclamation-triangle-fill" />
+                </svg>
+                <span id="errMsg">Chưa đủ thông tin!</span>
+            </div>
+        </div>
+
+        <div class="pt-5"></div>
+
+        <div class="d-none d-md-flex justify-content-center">
+            <img src="img/Planning-2.png" alt="Banner Image"
+                class="w-50 mb-5">
+        </div>
+
+        <div class="d-sm-flex d-md-none  justify-content-center">
+            <img src="img/Planning-2.png" alt="Banner Image"
+                class="w-100 mb-5">
+        </div>
+
+        <form id="frmGetLichHoc" action="#" method="POST">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Trường</span>
+                <select name="school" id="sltSchool" class="form-select" aria-label="Select your school">
+                    <option value="-1" selected>Click vào đây để chọn trường</option>
+                    <option value="0">IUH - Trường Đại học Công Nghiệp Tp.HCM</option>
+                    <option value="1">UT - Trường Đại học Giao Thông Vận Tải Tp.HCM</option>
+                    <option value="2">GDU - Trường Đại học Gia Định</option>
+                    <option value="3">NTT - Trường Đại học Nguyễn Tất Thành</option>
+                </select>
+            </div>
+
+            <p class="ps-md-3 d-none" id="lblTrangTraCuu">Hãy truy cập <a id="lblUrl" target="_blank" href="https://sv.iuh.edu.vn/tra-cuu-thong-tin.html">trang
+                    tra cứu</a> và nhập đủ thông tin. Sau khi tìm thấy thông tin, kéo xuống và lấy link Lịch Học Tuần <a href="https://www.facebook.com/iuhCalendar/posts/pfbid02msaJPxRrvjMiop6ZcqdwWsjgqhkVdZkVtV2Ks9DX9FHVZ4AHX4MRoRnFkp24RGwkl" target="_blank">[Hướng dẫn?]</a></p>
+
+            <p class="ps-md-3">Sau khi lấy link lịch học thành công, dán vào ô bên dưới nhé!</p>
+
+
+            <div id="formInputUrl" class="input-group mb-3 d-none">
+                <span class="input-group-text" id="lblKLichHoc">https://sv.iuh.edu.vn/tra-cuu/lich-hoc-tuan.html?k=</span>
+                <input class="form-control" type="text" name="url" id="txtKLichHoc" placeholder="XXXXXXXXXXXX" disabled>
+            </div>
+            <button class="btn btn-primary" id="btnSubmit" type="submit" disabled>Tạo lịch học</button>
+			
+            <a class="btn btn-danger" href="https://facebook.com/DThaiBao616">Báo lỗi trực tiếp</a>
+			
+            <a class="btn btn-warning" href="mailto:support@1boxstudios.com">Liên hệ qua Email</a>
+            </div>
+        </form>
+		<div class="pt-2"></div>
+
+			<i class="ps-md-3 text-danger">*Schendar không lưu trữ hay thu thập bất kì thông tin nào được cung cấp tại đây. Máy chủ sẽ xử lí trực tiếp thông tin không lưu trữ và chỉ hỗ trợ chuyển lịch từ trường sang lịch ICS</i>
+       
+    </div>
+</body>
+
+<script src="js/process.js"></script>
+
+</html>
