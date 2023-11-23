@@ -13,12 +13,12 @@ Sau một khoảng thời gian hoạt động thì mình nghĩ đã đến lúc 
 Ban đầu đây là project dành cho cộng đồng sinh viên và về sau vẫn vậy, mình nghĩ việc công khai mã nguồn sẽ đảm bảo tính minh bạch hơn, cũng như việc kế thừa phát triển về sau này.
 
 Mình rất cảm ơn sự ủng hộ của các bạn trong thời gian qua, project sẽ vẫn hoạt động như bình thường.
+// Bản fork lại đã chỉnh sửa một vài vấn dề bảo mật -Thiên-
 
 ## Công nghệ
 
 1. Ngôn ngữ PHP
 2. HTML, CSS, JS
-
 ## Hỗ trợ dự án
 
 Dự án được hỗ trợ bởi [1Box Studios](https://1boxstudios.com)
